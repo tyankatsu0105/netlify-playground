@@ -1,6 +1,8 @@
+import moment from 'moment'
+
 exports.handler = (event, context, callback) => {
   callback(null, {
     statusCode: 200,
-    body: "Hello Tyankatsu!!!"
+    body: moment().format()
   })
 }

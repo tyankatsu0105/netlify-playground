@@ -1,0 +1,16 @@
+{
+  "name": "netlify-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:tyankatsu0105/netlify-playground.git",
+  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "netlify-lambda build src/",
+    "serve": "netlify-lambda serve src/"
+  },
+  "devDependencies": {
+    "moment": "^2.24.0",
+    "netlify-lambda": "^1.3.3"
+  }
+}
