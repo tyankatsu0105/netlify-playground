@@ -16,7 +16,7 @@ exports.handler = async (event, context, callback) => {
 
   const res = await axios.post('https://api.line.me/v2/bot/message/reply', data, {
     headers: {
-      'Content-Type': 'appilcation/json',
+      'Content-Type': 'application/json',
       'Authorization': `Bearer ${process.env.CHANNEL_TOKEN}`
     }
   })
