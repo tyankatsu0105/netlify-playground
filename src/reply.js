@@ -20,7 +20,6 @@ exports.handler = async (event, context, callback) => {
       'Authorization': `Bearer ${process.env.CHANNEL_TOKEN}`
     }
   })
-  console.log(process.env.CHANNEL_TOKEN)
 
   callback(null, {
     statusCode: 200,
