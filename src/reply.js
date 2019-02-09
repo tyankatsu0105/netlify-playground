@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-exports.handler = async function(event, context, callback) {
+exports.handler = async (event, context, callback) => {
   const webhookBody = JSON.parse(event.body || "null")
   console.log(webhookBody)
 
