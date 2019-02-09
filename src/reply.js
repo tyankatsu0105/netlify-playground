@@ -6,7 +6,6 @@ exports.handler = async function(event, context, callback) {
 
   const data = {
     replyToken: webhookBody.events[0].replyToken,
-    to: webhookBody.userId,
     messages: [
       {
         type: 'text',
